@@ -88,7 +88,7 @@ app.post("/videoIdArray", function (req, res) {
         res.send(videoIdArray);
     })
     .catch((error)=>{
-      console.log("Error Found!");
+      console.log(error);
       res.sendStatus(404);
     })
 });
